@@ -144,7 +144,7 @@ if(isset($_POST['addAntwoorden5'])){
 	}
 }
 
-/*
+
 function vervolgvraag(){
     include 'db.php';
    // $sql = "SELECT vraag FROM vragen where idvraag = '1'" ;
@@ -172,4 +172,3 @@ FROM    antwoorden_gebruiker.idantwoorden_vragen i
            ELSE 0
            END = 1";
 }
-*/

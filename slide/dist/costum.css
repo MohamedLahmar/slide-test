@@ -75,7 +75,7 @@ body {
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h2 {
-  font-size: large;
+  
   color: #fff;
   font-family: monospace;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
@@ -105,5 +105,19 @@ body {
 
   
  }
+ div.a{
+  font-size: large;
+ }
 
- 
+ .button1 {
+  background-color: #56a3a5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}

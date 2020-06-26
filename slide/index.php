@@ -29,9 +29,10 @@ include 'includes/functions.php';
 					</div>
 					
 				</section>
-				<section class="a">
+				<section >
 					<div class="typewriter">
-						<h2>Hallo,ik ben main een algoritme gebruikt door de Nederlandse overheid. Ik weet niet wat ethiek is, maar jij kunt me daar vast bij helpen.</h2>
+						<h2>Hallo,ik ben main.</h2>
+						<div class="a">		
 						<?php 
 						$sql = "SELECT text FROM secties where heeftvragen = '0'";
 						$result = $conn->query($sql);
@@ -41,6 +42,7 @@ include 'includes/functions.php';
 						}
 						}
 						?>
+						</div>
 						<br><input value="Volgende" class="button1" onclick="fireEvent()">
 						
 					</div>
@@ -48,15 +50,15 @@ include 'includes/functions.php';
 				</section>
 				<section class="a">
 					<form method="POST" enctype="multipart/form-data">
-						<label for="fname">Voornaam:</label><br>
+						<label for="fname">Voornaam</label><br>
 						<input type="text" id="fname" name="fname" value="John"><br>
-						<label for="lname">Achternaam:</label><br>
+						<label for="lname">Achternaam</label><br>
 						<input type="text" id="lname" name="lname" value="Doe"><br>
-						<label for="lname">leeftijd:</label><br>
+						<label for="lname">leeftijd</label><br>
 						<input type="number" id="lnumber" name="lnumber" value="18"><br>
-						<label for="lname">adres:</label><br>
+						<label for="lname">adres</label><br>
 						<input type="text" id="ladres" name="ladres" value="ridderstraat 45"><br>
-						<input type="submit" name="addUser"value="Volgende" onclick="fireEvent()">
+						<input type="submit" name="addUser"value="Volgende" class="button1" onclick="fireEvent()">
 					  </form> 
 				</section>
 				<section class="a">
@@ -84,29 +86,30 @@ include 'includes/functions.php';
 					  <input type="radio" id="antwoord" name="antwoord" value="9">
 					  <label for="10">10</label>
 					  <input type="radio" id="antwoord" name="antwoord" value="10"><br>
-						<input type="submit" name="addAntwoorden" value="Volgende" onclick="fireEvent()">
+						<input type="submit" name="addAntwoorden" class="button1" value="Volgende" onclick="fireEvent()>
 					  </form>
 
 					
 				</section>
-				<section class="a">
+
+				<section class="a" >
 				<?php 
-						vraag2();
+						vervolgvraag();
 				?>
 					<form method="POST" enctype="multipart/form-data">
 						<input type="radio" value="11" > Ja<br>
 						<input type="radio" value="12"> Nee<br>
-						<input type="button" name="addAntwoorden2" value="Volgende" onclick="fireEvent()">
+						<input type="button" name="addAntwoorden2" class="button1" value="Volgende" onclick="fireEvent()">
 					  </form>
 				</section>
 				<section class="a" >
 				<?php 
-						vraag3();
+						vervolgsectie();
 				?>
 					<form method="POST" enctype="multipart/form-data">
 						<input type="radio" value="11"  > Ja<br>
 						<input type="radio" value="12" > Nee<br>
-						<input type="button" name="addAntwoorden3" value="Volgende" onclick="fireEvent()">
+						<input type="button" name="addAntwoorden3" class="button1" value="Volgende" onclick="fireEvent()">
 					  </form>
 
 				</section>
@@ -134,10 +137,10 @@ include 'includes/functions.php';
 					  <input type="radio" id="antwoord" name="antwoord" value="9">
 					  <label for="10">10</label>
 					  <input type="radio" id="antwoord" name="antwoord" value="10"><br>
-						<input type="button" name="addAntwoorden4" value="Volgende" onclick="fireEvent()">
+						<input type="button" name="addAntwoorden4" class="button1" value="Volgende" onclick="fireEvent()">
 					  </form>
 
-				</section class="a">
+				</section>
 				<section class="a">
 				<?php 
 						vraag5();
@@ -145,7 +148,7 @@ include 'includes/functions.php';
 					<form method="POST" enctype="multipart/form-data">
 					<input type="radio" value="11" >Ja<br>
 						<input type="radio" value="12" >Nee<br>
-						<input type="button"  name="addAntwoorden5"value="Volgende" onclick="fireEvent()">
+						<input type="button" class="button1" name="addAntwoorden5"value="Volgende" onclick="fireEvent()">
 					  </form>
 
 				</section>
@@ -156,7 +159,7 @@ include 'includes/functions.php';
 					<form method="POST" enctype="multipart/form-data">
 						<input type="radio" value="11" > Gelijkheid<br>
 						<input type="radio" value="12" > Veiligheid<br>
-						<input type="button" name="addAntwoorden6"value="Volgende" onclick="fireEvent()">
+						<input type="button"  class="button1" name="addAntwoorden6"value="Volgende" onclick="fireEvent()">
 					  </form>
 
 				</section>
